@@ -1,12 +1,12 @@
-import Image from "next/image"; // Import Next.js Image component
-import Link from "next/link";   // Import Next.js Link for navigation
+import Link from "next/link";
 
 export default function Navbar() {
   return (
     <nav style={styles.navbar}>
       {/* Logo Section */}
       <div style={styles.logoContainer}>
-        <img src="logo.png" alt="Raise the Bar Logo" width={150} height={50} />
+        {/* First try using the standard img tag to avoid Next.js image issues */}
+        <img src="/logo.png" alt="Raise the Bar Logo" width="150" height="50" style={styles.logo} />
       </div>
 
       {/* Navigation Links */}
@@ -19,7 +19,7 @@ export default function Navbar() {
   );
 }
 
-// Inline Styles (For simplicity; can be moved to a CSS file)
+// Inline Styles
 const styles = {
   navbar: {
     display: "flex",
@@ -31,6 +31,9 @@ const styles = {
   logoContainer: {
     display: "flex",
     alignItems: "center",
+  },
+  logo: {
+    maxHeight: "50px", // Ensures proper scaling
   },
   navLinks: {
     listStyle: "none",
