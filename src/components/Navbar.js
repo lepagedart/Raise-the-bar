@@ -6,7 +6,7 @@ export default function Navbar() {
     <nav style={styles.navbar}>
       {/* Logo Section */}
       <div style={styles.logoContainer}>
-        <img src="/logo.png" alt="Raise the Bar Logo" width={150} height={50} />
+        <img src="logo.png" alt="Raise the Bar Logo" width={150} height={50} />
       </div>
 
       {/* Navigation Links */}
