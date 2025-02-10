@@ -13,7 +13,7 @@ const footerStyle = {
   color: 'white',
   textAlign: 'center',
   padding: '1rem',
-  position: 'absolute',
+  position: 'relative', // Keeps it below content
   bottom: 0,
   width: '100%',
 };
